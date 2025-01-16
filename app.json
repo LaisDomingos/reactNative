@@ -22,11 +22,11 @@
       "favicon": "./assets/images/favicon.png"
     },
     "splash": {
-      "backgroundColor": "#7CB626",  
+      "backgroundColor": "#17519A",  
       "image": "./assets/images/icon.png",  
       "dark": {
         "image": "./assets/images/icon.png",  
-        "backgroundColor": "#E4080A" 
+        "backgroundColor": "#17519A" 
       },
       "imageWidth": 200,
       "resizeMode": "contain",  
