@@ -16,8 +16,6 @@ export default function RFIDReader() {
       <TouchableOpacity style={styles.button} onPress={() => handleRFIDRead('RFID12345')}>
         <Text style={styles.buttonText}>Simular Leitura de RF-ID</Text>
       </TouchableOpacity>
-
-      
     </View>
   );
 }
