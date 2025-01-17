@@ -1,8 +1,7 @@
 import React from 'react';
 import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
 
-export default function RFIDReader({ route, navigation }: any) {
-  const { setor, material } = route.params;
+export default function RFIDReader() {
 
   const handleRFIDRead = (rfid: string) => {
     console.log('RF-ID Lido:', rfid);
@@ -11,8 +10,6 @@ export default function RFIDReader({ route, navigation }: any) {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.label}>Setor: {setor}</Text>
-      <Text style={styles.label}>Material: {material}</Text>
       <Text style={styles.info}>Aproxime o cartão RF-ID do leitor...</Text>
 
       {/* Simulação de leitura do cartão */}
@@ -20,9 +17,7 @@ export default function RFIDReader({ route, navigation }: any) {
         <Text style={styles.buttonText}>Simular Leitura de RF-ID</Text>
       </TouchableOpacity>
 
-      <TouchableOpacity style={[styles.button, styles.backButton]} onPress={() => navigation.goBack()}>
-        <Text style={styles.buttonText}>Voltar</Text>
-      </TouchableOpacity>
+      
     </View>
   );
 }
